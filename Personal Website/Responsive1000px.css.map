@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,cAAc,EAAE,MAAM;CAKzB;;AAND,AAGI,UAHM,GAGH,eAAe,CAAA;EACd,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "Responsive1000px.scss"
+    ],
+    "names": [],
+    "file": "Responsive1000px.css"
+}

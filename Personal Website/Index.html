@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Me</title>
+    <link rel="stylesheet" href="Index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-device-width: 720px)"
+      href="./Responsive.css"
+      importance="100"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-device-width: 1120px)"
+      href="./Responsive_Content.css"
+      importance="100"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-device-width: 1000px)"
+      href="./Responsive1000px.css"
+      importance="100"
+    />
+  </head>
+
+  <body>
+    <!-- Creating Nav -->
+    <nav id="Nav">
+      <!-- Hamburger -->
+      <ul onclick="Hide_Open(this.id)" id="HamBurger-Cont">
+        <div class="lines" id="line1"></div>
+        <div class="lines" id="line2"></div>
+        <div class="lines" id="line3"></div>
+      </ul>
+
+      <div>
+        <!-- Other Nave elements -->
+        <ul id="Nav-Cont">
+          <li><a href="#Intro-Img" class="Nav-items">About</a></li>
+          <li><a href="./Portfolio.html" class="Nav-items">Portfolio</a></li>
+          <li><a href="#Contact" class="Nav-items">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Profile im age -->
+      <a href="Index.html" id="Profile-link">
+        <img src="./Images/New Profile.jpg" alt="img_not_found" id="Profile" />
+      </a>
+    </nav>
+
+      <!-- Introduction -->
+      <section id="Intro">
+        <!-- Intro Image -->
+        <div id="Intro-Img">
+          <img src="./Images/Intro.jfif" alt="Image Not Found" />
+        </div>
+
+        <!-- Intro Text -->
+        <div id="Intro-Txt">
+          <h1 class="heading">
+            Hi, I'am Krishna, a <br />
+            Student in <br />
+            KVVFJ,India
+          </h1>
+
+          <p class="paragraph">
+            Hey How are you
+            <br />Voluptatibus error velit nihil inventore repellat,<br />odit
+            eos. Quam eum veniam nihil.
+          </p>
+        </div>
+      </section>
+
+      <!-- About  -->
+      <section id="About" class="Top-bottom-border">
+        <div id="Section">
+          <!-- 1st Section of 2 with Text and 2 Images -->
+
+          <div id="Sub-Section1">
+            <div id="SubSec1">
+              <h1 class="heading">About Me</h1>
+              <p class="paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                dolorem amet laborum dignissimos quos, explicabo aperiam
+                architecto officiis quidem assumenda nisi iste,
+              </p>
+
+              <!-- Animated Link to Contact -->
+
+              <div class="Animated-link Up">
+                <div
+                  style="display: flex"
+                  class="cont"
+                  onmouseover="LineOut()"
+                  onmouseout="LineIn()"
+                >
+                  <a href="#Contact">
+                    <h1>Contact Me</h1>
+                  </a>
+                  <div class="Hover-Arrow">
+                    <sup> &#129061; </sup>
+                  </div>
+                </div>
+                <div class="narrow-line-under"></div>
+              </div>
+            </div>
+
+            <div id="SubSec2">
+              <img
+                src="./Images/About Imgs/Beard man on stair.jpg"
+                alt="Image Not Found"
+              />
+            </div>
+          </div>
+
+          <!-- 2nd Section of 2 with 1 Images -->
+
+          <div id="Sub-Section2">
+            <div>
+              <img
+                src="./Images/About Imgs/boy on table.jpg"
+                alt="Image Not Found"
+              />
+            </div>
+
+            <div>
+              <img
+                src="./Images/About Imgs/boy on table.jpg"
+                alt="Image Not Found"
+                id="About-img2"
+                style="margin-top: 3rem"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Past Work Experience -->
+
+      <section id="work" class="Top-bottom-border">
+        <div id="Work-Cont">
+          <div id="past-work-head">
+            <h1 class="heading">
+              My past work <br />
+              Experience
+            </h1>
+
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis nobis recusandae qui at alias explicabo.
+            </p>
+
+            <!-- Animated Link to Portfolio -->
+
+            <div class="Animated-link Up">
+              <div
+                style="display: flex"
+                class="cont"
+                onmouseover="LineOut()"
+                onmouseout="LineIn()"
+              >
+                <a href="./Portfolio.html">
+                  <h1>View Portfolio</h1>
+                </a>
+                <div class="Hover-Arrow">
+                  <sup> &#129061; </sup>
+                </div>
+              </div>
+              <div class="narrow-line-under"></div>
+            </div>
+          </div>
+
+          <div id="Work-plat-Cont">
+            <div class="Exper">
+              <img
+                src="https://assets.website-files.com/60e640d00fdb1e0bd76fae59/60ef8365a9f795fb52016d35_youtube-logo-portfolio-x-webflow-template.svg"
+                alt=""
+              />
+
+              <div>
+                <h1 class="heading">Youtube</h1>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corrupti, numquam.
+                </p>
+              </div>
+            </div>
+
+            <div class="Exper">
+              <img
+                src="https://assets.website-files.com/60e640d00fdb1e0bd76fae59/60ef8365639cd01c5eb4785e_twitter-logo-portfolio-x-webflow-template.svg"
+                alt=""
+              />
+
+              <div>
+                <h1 class="heading">Twitter</h1>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corrupti, numquam.
+                </p>
+              </div>
+            </div>
+
+            <div class="Exper" style="border-bottom: none;">
+              <img
+                src="https://assets.website-files.com/60e640d00fdb1e0bd76fae59/60ef8365639cd0680fb4785d_twitch-logo-portfolio-x-webflow-template.svg"
+                alt=""
+              />
+
+              <div>
+                <h1 class="heading">Twitch</h1>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corrupti, numquam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Info -->
+
+      <footer>
+        <!-- Contact with Form -->
+
+        <div id="Contact" class="Top-bottom-border">
+          <section id="sec1">
+            <h1 class="heading" style="margin-top: 10rem">Contact Me</h1>
+
+            <p class="paragraph" style="font-size: 1.4rem; margin-top: 4rem">
+              <b>Mobile No :- </b> 94******25 <br />
+
+              <b>Email :- </b> krishnanoutiyal@gmail.com <br />
+
+              <b>Address :- </b> Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. <br />
+              Reiciendis, commodi nisi eum fugiat adipisci incidunt praesentium
+            </p>
+          </section>
+
+          <section id="sec2" class="Up">
+            <form action="./Form Submited.html" autocomplete="off">
+              <!-- Name Input -->
+
+              <div>
+                <input
+                  type="text"
+                  id="Name"
+                  name="Name"
+                  class="form"
+                  placeholder="Name"
+                  required
+                  onfocus="Color_Hover()"
+                  autocomplete="off"
+                />
+                <div
+                  class="narrow-line-under1"
+                  id="nl1"
+                  style="margin-top: -2rem"
+                ></div>
+              </div>
+              <!-- Email Input -->
+
+              <div>
+                <input
+                  type="email"
+                  id="Email"
+                  name="Email"
+                  class="form"
+                  placeholder="Email"
+                  required
+                  onfocus="Color_Hover1()"
+                  autocomplete="off"
+                />
+                <div
+                  class="narrow-line-under1"
+                  id="nl2"
+                  style="margin-top: -2rem"
+                ></div>
+              </div>
+
+              <!-- Description Input -->
+
+              <div>
+                <textarea
+                  name="Description"
+                  id="Textarea"
+                  cols="30"
+                  rows="10"
+                  class="form"
+                  placeholder="Describe"
+                  style="height: 10rem !important"
+                  onfocus="Color_Hover2()"
+                  required
+                ></textarea>
+                <div
+                  class="narrow-line-under1"
+                  id="nl3"
+                  style="margin-top: -2rem"
+                ></div>
+              </div>
+
+              <div>
+                <input type="submit" placeholder="Submit" class="form Submit" />
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <!-- Copyright Ribbon -->
+        <section id="Social-Media-Links">
+          <h1>Check Out!! My Social Media</h1>
+          <div>
+            <img src="https://img.icons8.com/cotton/64/000000/youtube.png" />
+            <img src="https://img.icons8.com/cotton/64/000000/facebook.png" />
+            <img
+              src="https://img.icons8.com/cotton/64/000000/instagram-new.png"
+            />
+            <img src="https://img.icons8.com/cotton/64/000000/twitter.png" />
+            <img
+              src="https://img.icons8.com/cotton/64/000000/whatsapp--v4.png"
+            />
+          </div>
+        </section>
+      </footer>
+  </body>
+  <script src="index.js"></script>
+</html>

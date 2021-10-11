@@ -1,0 +1,11 @@
+#Work-Cont {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Work-Cont > #past-work-head {
+  width: 100%;
+}
+/*# sourceMappingURL=Responsive1000px.css.map */

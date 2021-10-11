@@ -1,0 +1,41 @@
+@import "Variable.scss";
+
+nav{
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    transition: $Special-Transition;
+}
+
+nav > div, #Nav-Cont {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    & .Nav-items{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+
+#HamBurger-Cont{
+    position: fixed !important;
+    z-index: 999;
+    top: 8rem;
+    left: 1.5%;
+}
+
+#Profile-link{
+    display: none;
+}
+
+#Social-Media-Links{
+    flex-direction: column;
+    height: fit-content;
+    gap: 1rem;
+    margin-top: 2rem;
+}

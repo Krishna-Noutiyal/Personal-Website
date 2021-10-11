@@ -1,0 +1,455 @@
+@import "./Variable.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 250ms ease-in;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  background-color: $back-color;
+  color: rgb(221, 219, 214);
+}
+
+
+nav > div > ul,
+nav > div > ul > li > a {
+  list-style: none;
+  text-decoration: none;
+  color: $Main-color;
+}
+
+.Up{
+  z-index: 10 !important;
+}
+// Main Navbar
+#Nav {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 99 !important;
+
+}
+
+// ul with fixed width to seperate Hamburger and Profile picture
+#Nav-Cont {
+  display: flex;
+  width: 80vw;
+  padding: $Main-Padding;
+  flex-flow: row;
+  justify-content: center;
+}
+
+// Items present in Navbar
+.Nav-items {
+  font-size: $Heading-Size;
+  letter-spacing: -1px;
+  margin-left: 1rem;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    font-size: $Heading-Size + 0.1;
+    color: $Main-Hover-color !important;
+    letter-spacing: 0px;
+    border-bottom: 2px solid $Main-color;
+  }
+}
+
+// Right side Profile picture in Nav bar
+#Profile {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 100%;
+  opacity: 0%;
+  border: 1px solid transparent;
+  &:hover {
+    // transform: scale(1.1);
+    border: 3px solid $Main-Hover-color;
+  }
+}
+
+// Container of Hamburger lines
+#HamBurger-Cont {
+  position: static;
+  // left: 0;
+  height: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column;
+  &:hover {
+    & > div {
+      background-color: $Main-Hover-color;
+    }
+  }
+}
+
+// Lines of Hamburger
+#HamBurger-Cont > div {
+  height: 4px;
+  width: 35px;
+  display: flex;
+  background-color: $Main-color;
+  border-radius: 50px;
+}
+
+// Rotating of Ham to Cross
+.Ham {
+  #line1 {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  #line2 {
+    opacity: 0%;
+  }
+  #line3 {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+}
+
+// Rotating of Ham to Normal
+.Ham-Normal {
+  #line1 {
+    position: static;
+    transform: rotate(180deg);
+  }
+  #line2 {
+    background-color: $Main-color;
+  }
+  #line3 {
+    position: static;
+    transform: rotate(180deg);
+  }
+}
+
+// transparency of Nav bar and Nav Items
+.transparent {
+  color: transparent;
+  background-color: transparent;
+}
+
+// Nav Part Done
+
+// Intro Part
+
+#Intro {
+  padding-top: 19rem;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap-reverse;
+  width: 80vw;
+  margin: auto;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#Intro-Img {
+  height: 100%;
+  width: 35rem;
+  overflow: hidden;
+}
+#Intro-Img > img {
+  height: 100%;
+  width: 100%;
+}
+
+#Intro-Txt {
+  word-wrap: break-word;
+}
+
+// Global Heading
+.heading {
+  font-size: 4rem;
+  margin-top: 3rem;
+  letter-spacing: 2px;
+}
+
+// Global Paragarph
+.paragraph {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 2.8rem;
+  letter-spacing: -1px;
+  color: $Sec-color;
+}
+
+.Top-bottom-border {
+  margin-top: 18rem !important;
+  border-top: 1px solid $Border-color;
+  width: 80vw;
+  margin: auto;
+}
+
+// About
+
+#About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & > #Section {
+    margin-top: 8rem;
+    width: 100%;
+    
+    & > #Sub-Section1 {
+      display: flex;
+      gap: 2rem;
+
+      & > #SubSec1 {
+        width: 50%;
+      }
+
+      & > #SubSec2 {
+        width: 50%;
+        overflow: hidden;
+
+        & > img {
+          width: 100%;
+          border-radius: 12px;
+        }
+      }
+    }
+
+    & > #Sub-Section2 {
+      width: 100%;
+      height: 25rem;
+      display: flex;
+      gap: 2rem;
+      margin-top: 3rem;
+      justify-content: space-evenly;
+      // overflow: hidden;
+
+      & > div {
+        width: 100%;
+
+        & > img {
+          width: 100%;
+          border: transparent;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}
+
+// Past Work
+
+#Work-Cont {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+
+  // Container of .Exper
+
+  & > #Work-plat-Cont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+
+// Work plateform sub-container containg image and text
+
+.Exper {
+  width: 100%;
+  height: 100%;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 4rem 0 3rem 0;
+  border-bottom: 1px solid $Border-color;
+  & > div > h1 {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+  & > div > p {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+}
+
+#past-work-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 2rem;
+  width: 50%;
+}
+
+// Small Arrow That Changes Position when hoverd
+
+.Hover-Arrow {
+  font-size: 2rem;
+  transform: rotate(40deg);
+  margin-left: 1.2rem;
+  margin-top: -4px;
+}
+// Link To portfolio with animation - Past Work
+
+.Animated-link {
+  margin-top: 6rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  font-size: 1.2rem !important;
+
+  // &:hover {
+  // }
+  
+  & > .cont{
+    &>a{
+      text-decoration: none;
+      color: $Main-color;
+
+    }
+    
+    &:hover {
+      & h1{
+        color: $Sec-color !important;
+
+      }
+
+      .Hover-Arrow {
+        transform: translate3d(6px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+          rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) rotate(40deg) scale(1.2) ;
+        transform-style: preserve-3d;
+        color: $Main-Hover-color;
+      }
+    }
+  }
+}
+
+// Small Arrow That changes size and position when hoverd
+
+// &.Hover-Arrow {
+//   transform: translate3d(6px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) rotate(40deg) scale(1.3);
+//   transform-style: preserve-3d;
+//   color: $Main-color;
+// }
+// Line Under Link whic is not visibal until hoverd
+
+.narrow-line-under {
+  transition: $Special-Transition;
+  width: 0%;
+  height: 2px;
+  background-color: $Main-color;
+}
+
+// Line Under Link whic is visibal
+
+.narrow-line-under1 {
+  margin-top: -2rem !important;
+  margin: 1px;
+  transition: $Special-Transition;
+  width: 0% ;
+  height: 2px;
+  background-color: $Main-color;
+}
+
+//  section 1 of Footer
+
+#Contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  // Bold Text inside paragraph
+
+  & b {
+    color: $Main-color !important;
+  }
+}
+
+// Form Tag
+
+form {
+  width: 30rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10rem;
+
+  & > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Input tags and textarea
+
+.form {
+  width: 100%;
+  margin: 2rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 3rem;
+  color: $Main-Hover-color;
+  outline: none;
+}
+
+// Form Submit Button
+
+.Submit {
+  margin-top: 6rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: $Main-color;
+  border: 2px solid $Main-color;
+  border-radius: 12px;
+  transition: $Special-Transition;
+  &:hover {
+    color: $Main-Hover-color;
+    border-color: $Main-Hover-color;
+    box-shadow: -1px 1px 10px $Main-Hover-color, 1px -1px 10px $Main-Hover-color;
+  }
+}
+
+//  Footer
+#Social-Media-Links {
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  height: 4rem;
+  margin-top: 8rem;
+  background-color: rgb(67, 79, 100);
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+
+  & > div {
+    display: flex;
+    justify-content: space-around;
+    & > img {
+      cursor: pointer;
+      margin: 0 0.5rem 0 0.5rem;
+      height: 42px;
+      width: 42px;
+      filter: grayscale(0);
+      transition: 700ms ease-out;
+      &:hover {
+        filter: grayscale(1);
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+
+#Section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#Sub-Section1{
+    flex-direction: column;
+    // width: 100%;
+    justify-content: center;
+    align-items: center;
+    &>#SubSec1{
+        width: 100% !important;
+    }
+    &>#SubSec2{
+        width: 100% !important;
+    }
+}
+
+
+#Sub-Section2{
+    flex-direction: column;
+    height: fit-content !important;
+    margin-top: 0 !important;
+    & > div{
+        height: fit-content;
+    }
+}
+
+
+#About-img2{
+    margin-top: 0 !important;
+  }
+#Contact {
+    flex-direction: column;
+}
+
+form{
+    width: 100%;
+    margin-top: 5rem;
+}
+#sec1{
+    width: 100%;
+}
+
+#sec2{
+    width: 100%;
+}
+
+

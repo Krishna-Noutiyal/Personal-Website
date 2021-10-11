@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      #Portfoli,
+      #Portfoli > h1 {
+        text-align: center;
+        letter-spacing: 5px;
+      }
+      #Portfoli > p {
+        letter-spacing: 2px;
+      }
+      .form {
+        width: fit-content;
+        height: fit-content;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+      }
+    </style>
+    
+    <link
+    rel="stylesheet"
+    media="screen and (max-device-width: 720px)"
+    href="./Responsive.css"
+  />
+  </head>
+  <body>
+
+    <!-- Creating Nav -->
+    <nav id="Nav">
+      <!-- Hamburger -->
+      <ul onclick="Hide_Open(this.id)" id="HamBurger-Cont">
+        <div class="lines" id="line1"></div>
+        <div class="lines" id="line2"></div>
+        <div class="lines" id="line3"></div>
+      </ul>
+
+      <div>
+        <!-- Other Nave elements -->
+        <ul id="Nav-Cont">
+          <li><a href="#Intro-Img" class="Nav-items">About</a></li>
+          <li><a href="./Portfolio.html" class="Nav-items">Portfolio</a></li>
+          <li><a href="#Contact" class="Nav-items">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Profile im age -->
+      <a href="Index.html" id="Profile-link">
+        <img src="./Images/New Profile.jpg" alt="img_not_found" id="Profile" />
+      </a>
+    </nav>
+    <br />
+
+    <!-- Portfolio Heading and Description -->
+
+    <section id="Portfoli" class="Top-bottom-border">
+      <h1 class="heading">Portfolio</h1>
+      <p class="paragraph">
+        I am currently learning Web Development<br />
+        So there are no project for me to show
+      </p>
+
+      <div class="Up">
+        <a href="./Index.html"> 
+          <button class="form Submit">Home</button>
+        </a>
+      </div>
+    </section>
+  </body>
+  <script src="./index.js"></script>
+
+</html>
